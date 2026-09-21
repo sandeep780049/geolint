@@ -9,18 +9,18 @@ living showcase of AI-search readiness scores. Pipeline:
 How it works and how to change the site list:
 [docs/metrics.md](../docs/metrics.md).
 
-Last run: **2026-09-20** (UTC) · geolint v0.3.2
+Last run: **2026-09-21** (UTC) · geolint v0.3.2
 
 | Site | Score | Grade | Errors | Warnings | Last scan (UTC) |
 | ---- | ----- | ----- | -----: | -------: | --------------- |
-| [stripe.com](https://stripe.com) | <img src="stripe-com.svg" alt="geolint: 96/100 · A"> 96/100 | A | 0 | 1 | 2026-09-20 |
-| [vercel.com](https://vercel.com) | <img src="vercel-com.svg" alt="geolint: 95/100 · A"> 95/100 | A | 0 | 2 | 2026-09-20 |
-| [anthropic.com](https://www.anthropic.com) | <img src="anthropic-com.svg" alt="geolint: 92/100 · A"> 92/100 | A | 0 | 4 | 2026-09-20 |
-| [news.ycombinator.com](https://news.ycombinator.com) | <img src="news-ycombinator-com.svg" alt="geolint: 90/100 · A"> 90/100 | A | 0 | 5 | 2026-09-20 |
-| [github.com](https://github.com) | <img src="github-com.svg" alt="geolint: 88/100 · B"> 88/100 | B | 1 | 4 | 2026-09-20 |
-| [example.com](https://example.com) | <img src="example-com.svg" alt="geolint: 86/100 · B"> 86/100 | B | 1 | 6 | 2026-09-20 |
-| [openai.com](https://openai.com) | <img src="openai-com.svg" alt="geolint: 83/100 · B"> 83/100 | B | 2 | 6 | 2026-09-20 |
-| [perplexity.ai](https://www.perplexity.ai) | <img src="perplexity-ai.svg" alt="geolint: 81/100 · B"> 81/100 | B | 3 | 5 | 2026-09-20 |
+| [stripe.com](https://stripe.com) | <img src="stripe-com.svg" alt="geolint: 96/100 · A"> 96/100 | A | 0 | 1 | 2026-09-21 |
+| [vercel.com](https://vercel.com) | <img src="vercel-com.svg" alt="geolint: 95/100 · A"> 95/100 | A | 0 | 2 | 2026-09-21 |
+| [anthropic.com](https://www.anthropic.com) | <img src="anthropic-com.svg" alt="geolint: 92/100 · A"> 92/100 | A | 0 | 4 | 2026-09-21 |
+| [news.ycombinator.com](https://news.ycombinator.com) | <img src="news-ycombinator-com.svg" alt="geolint: 90/100 · A"> 90/100 | A | 0 | 5 | 2026-09-21 |
+| [github.com](https://github.com) | <img src="github-com.svg" alt="geolint: 89/100 · B"> 89/100 | B | 1 | 4 | 2026-09-21 |
+| [example.com](https://example.com) | <img src="example-com.svg" alt="geolint: 86/100 · B"> 86/100 | B | 1 | 6 | 2026-09-21 |
+| [openai.com](https://openai.com) | <img src="openai-com.svg" alt="geolint: 83/100 · B"> 83/100 | B | 2 | 6 | 2026-09-21 |
+| [perplexity.ai](https://www.perplexity.ai) | <img src="perplexity-ai.svg" alt="geolint: 81/100 · B"> 81/100 | B | 3 | 5 | 2026-09-21 |
 
 Each site has three files: `<slug>.json` (the raw
 `geolint check -f json` report, or an `{ "error": "…" }` object when the
