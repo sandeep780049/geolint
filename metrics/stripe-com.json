@@ -5,12 +5,12 @@
   },
   "url": "https://stripe.com/",
   "finalUrl": "https://stripe.com/",
-  "scannedAt": "2026-10-19T10:43:10.855Z",
-  "durationMs": 1736,
+  "scannedAt": "2026-10-20T10:00:13.862Z",
+  "durationMs": 6302,
   "page": {
     "status": 200,
     "contentType": "text/html; charset=utf-8",
-    "timingMs": 127,
+    "timingMs": 129,
     "redirected": false
   },
   "robots": {
@@ -82,9 +82,17 @@
       "detail": "Whatever sits under the H1 — image, list, navigation — is what engines read first; a declarative lead paragraph is the easiest span to cite.",
       "fix": "Open the article with a 2–4 sentence paragraph that directly answers the question the H1 poses.",
       "ruleId": "content/answer-first"
+    },
+    {
+      "severity": "warn",
+      "message": "Canonical points to a different origin",
+      "detail": "Canonical is https://qa.stripe.com while the page was served from https://stripe.com — citations and ranking signals will consolidate there instead.",
+      "fix": "Point the canonical at the preferred URL on this origin, unless the cross-origin canonical is intentional.",
+      "evidence": "<link rel=\"canonical\" href=\"https://qa.stripe.com/\">",
+      "ruleId": "technical/canonical"
     }
   ],
-  "score": 96,
+  "score": 95,
   "grade": "A",
   "categories": {
     "ai-crawler": {
@@ -202,9 +210,9 @@
       ]
     },
     "technical": {
-      "score": 100,
+      "score": 94,
       "errors": 0,
-      "warnings": 0,
+      "warnings": 1,
       "infos": 0,
       "rulesRun": [
         "technical/page-unreachable",
@@ -224,7 +232,6 @@
         "technical/http-error",
         "technical/client-rendered",
         "technical/sitemap-missing",
-        "technical/canonical",
         "technical/title-missing",
         "technical/meta-description",
         "technical/slow-response",
