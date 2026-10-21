@@ -5,12 +5,12 @@
   },
   "url": "https://vercel.com/",
   "finalUrl": "https://vercel.com/",
-  "scannedAt": "2026-10-20T10:00:20.359Z",
-  "durationMs": 2757,
+  "scannedAt": "2026-10-21T10:05:49.798Z",
+  "durationMs": 1975,
   "page": {
     "status": 200,
     "contentType": "text/html; charset=utf-8",
-    "timingMs": 143,
+    "timingMs": 141,
     "redirected": false
   },
   "robots": {
@@ -23,7 +23,7 @@
     "url": "https://vercel.com/llms.txt",
     "status": 200,
     "title": "Vercel",
-    "linkCount": 27
+    "linkCount": 28
   },
   "findings": [
     {
