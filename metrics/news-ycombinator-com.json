@@ -5,12 +5,12 @@
   },
   "url": "https://news.ycombinator.com/",
   "finalUrl": "https://news.ycombinator.com/",
-  "scannedAt": "2026-10-28T11:18:29.064Z",
-  "durationMs": 806,
+  "scannedAt": "2026-10-29T11:30:06.252Z",
+  "durationMs": 272,
   "page": {
-    "status": 200,
+    "status": 503,
     "contentType": "text/html; charset=utf-8",
-    "timingMs": 209,
+    "timingMs": 134,
     "redirected": false
   },
   "robots": {
@@ -80,6 +80,14 @@
     },
     {
       "severity": "warn",
+      "message": "Thin content — only ~13 words of visible text",
+      "detail": "Pages with very little extractable text give AI engines nothing to quote; they also correlate with client-rendered shells.",
+      "fix": "Expand the page with substantive, answerable content — explanations, specifics, Q&A.",
+      "evidence": "13 words",
+      "ruleId": "content/thin-content"
+    },
+    {
+      "severity": "warn",
       "message": "No <h1> on the page",
       "detail": "The H1 anchors how machines understand and index the page topic.",
       "fix": "Add one descriptive <h1> that states what the page is about.",
@@ -114,6 +122,29 @@
       "ruleId": "content/no-data-points"
     },
     {
+      "severity": "info",
+      "message": "The <html> element has no lang attribute",
+      "detail": "Without a declared language, engines must infer it — and can get it wrong.",
+      "fix": "Add lang to the root element, e.g. <html lang=\"en\">.",
+      "ruleId": "content/lang-missing"
+    },
+    {
+      "severity": "error",
+      "message": "Page returned HTTP 503",
+      "detail": "Crawlers receive the error response, not your content.",
+      "fix": "Return a 200 with real content; fix the underlying 4xx/5xx or the rules that trigger it.",
+      "evidence": "https://news.ycombinator.com/ → HTTP 503",
+      "ruleId": "technical/http-error"
+    },
+    {
+      "severity": "error",
+      "message": "Page appears client-rendered — AI crawlers see an empty shell",
+      "detail": "Only ~13 words of visible text in the initial HTML — likely rendered client-side.",
+      "fix": "Use server-side rendering, static generation or prerendering so the real content is in the first HTML response.",
+      "evidence": "13 words of visible text",
+      "ruleId": "technical/client-rendered"
+    },
+    {
       "severity": "warn",
       "message": "No sitemap discoverable",
       "detail": "No Sitemap directive in robots.txt and /sitemap.xml does not resolve.",
@@ -136,8 +167,8 @@
       "ruleId": "technical/meta-description"
     }
   ],
-  "score": 90,
-  "grade": "A",
+  "score": 82,
+  "grade": "B",
   "categories": {
     "ai-crawler": {
       "score": 98,
@@ -221,10 +252,10 @@
       ]
     },
     "content": {
-      "score": 82,
+      "score": 74,
       "errors": 0,
-      "warnings": 2,
-      "infos": 3,
+      "warnings": 3,
+      "infos": 4,
       "rulesRun": [
         "content/thin-content",
         "content/no-h1",
@@ -240,18 +271,16 @@
         "content/stale-dates"
       ],
       "passed": [
-        "content/thin-content",
         "content/images-no-alt",
         "content/no-structure",
-        "content/lang-missing",
         "content/answer-first",
         "content/self-contained-paragraphs",
         "content/stale-dates"
       ]
     },
     "technical": {
-      "score": 90,
-      "errors": 0,
+      "score": 60,
+      "errors": 2,
       "warnings": 1,
       "infos": 2,
       "rulesRun": [
@@ -269,8 +298,6 @@
       ],
       "passed": [
         "technical/page-unreachable",
-        "technical/http-error",
-        "technical/client-rendered",
         "technical/title-missing",
         "technical/slow-response",
         "technical/redirect",
