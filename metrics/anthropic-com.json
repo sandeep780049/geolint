@@ -5,12 +5,12 @@
   },
   "url": "https://www.anthropic.com/",
   "finalUrl": "https://www.anthropic.com/",
-  "scannedAt": "2026-11-03T12:45:13.926Z",
-  "durationMs": 1587,
+  "scannedAt": "2026-11-04T12:57:31.798Z",
+  "durationMs": 1162,
   "page": {
     "status": 200,
     "contentType": "text/html; charset=utf-8",
-    "timingMs": 174,
+    "timingMs": 144,
     "redirected": false
   },
   "robots": {
