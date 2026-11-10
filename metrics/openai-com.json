@@ -5,12 +5,12 @@
   },
   "url": "https://openai.com/",
   "finalUrl": "https://openai.com/",
-  "scannedAt": "2026-11-09T13:50:56.011Z",
-  "durationMs": 1306,
+  "scannedAt": "2026-11-10T13:26:10.644Z",
+  "durationMs": 923,
   "page": {
     "status": 403,
     "contentType": "text/html; charset=UTF-8",
-    "timingMs": 79,
+    "timingMs": 85,
     "redirected": false
   },
   "robots": {
