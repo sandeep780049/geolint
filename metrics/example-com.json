@@ -5,12 +5,12 @@
   },
   "url": "https://example.com/",
   "finalUrl": "https://example.com/",
-  "scannedAt": "2026-11-17T14:20:13.712Z",
-  "durationMs": 183,
+  "scannedAt": "2026-11-18T13:54:29.407Z",
+  "durationMs": 270,
   "page": {
     "status": 200,
     "contentType": "text/html; charset=utf-8",
-    "timingMs": 65,
+    "timingMs": 92,
     "redirected": false
   },
   "robots": {
