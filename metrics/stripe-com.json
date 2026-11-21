@@ -5,12 +5,12 @@
   },
   "url": "https://stripe.com/",
   "finalUrl": "https://stripe.com/",
-  "scannedAt": "2026-11-20T13:58:23.729Z",
-  "durationMs": 1641,
+  "scannedAt": "2026-11-21T13:26:14.480Z",
+  "durationMs": 1422,
   "page": {
     "status": 200,
     "contentType": "text/html; charset=utf-8",
-    "timingMs": 76,
+    "timingMs": 198,
     "redirected": false
   },
   "robots": {
